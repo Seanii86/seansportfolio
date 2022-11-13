@@ -2,7 +2,7 @@
   "homepage": "http://Seanii86.github.io/seansportfolio",
   "name": "finalport",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
