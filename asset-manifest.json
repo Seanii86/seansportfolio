@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1543b8aa.css",
-    "main.js": "/static/js/main.be98519f.js",
-    "static/js/787.389c16b4.chunk.js": "/static/js/787.389c16b4.chunk.js",
-    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/logo-s.png": "/static/media/logo-s.bfc9f81846bda5218dab.png",
-    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/index.html",
-    "main.1543b8aa.css.map": "/static/css/main.1543b8aa.css.map",
-    "main.be98519f.js.map": "/static/js/main.be98519f.js.map",
-    "787.389c16b4.chunk.js.map": "/static/js/787.389c16b4.chunk.js.map"
+    "main.css": "/seansportfolio/static/css/main.0586e5e4.css",
+    "main.js": "/seansportfolio/static/js/main.5c558e3e.js",
+    "static/js/787.389c16b4.chunk.js": "/seansportfolio/static/js/787.389c16b4.chunk.js",
+    "static/media/helvetica-neu.ttf": "/seansportfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/seansportfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo-s.png": "/seansportfolio/static/media/logo-s.bfc9f81846bda5218dab.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/seansportfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/seansportfolio/index.html",
+    "main.0586e5e4.css.map": "/seansportfolio/static/css/main.0586e5e4.css.map",
+    "main.5c558e3e.js.map": "/seansportfolio/static/js/main.5c558e3e.js.map",
+    "787.389c16b4.chunk.js.map": "/seansportfolio/static/js/787.389c16b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1543b8aa.css",
-    "static/js/main.be98519f.js"
+    "static/css/main.0586e5e4.css",
+    "static/js/main.5c558e3e.js"
   ]
 }
