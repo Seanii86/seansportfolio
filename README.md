@@ -9,13 +9,13 @@ Will be continuously adding more
 
 # Images
 
-![](../finalport/public/markdown/home.png)
+![alt text](https://github.com/Seanii86/seansportfolio/blob/main/public/markdown/home.png?raw=true)
 
-![](../finalport/public/markdown/about.png)
+![alt text](https://github.com/Seanii86/seansportfolio/blob/main/public/markdown/about.png?raw=true)
 
-![](../finalport/public/markdown/contact.png)
+![alt text](https://github.com/Seanii86/seansportfolio/blob/main/public/markdown/contact.png?raw=true)
 
-![](../finalport/public/markdown/projects.png)
+![alt text](https://github.com/Seanii86/seansportfolio/blob/main/public/markdown/projects.png?raw=true)
 
 
 # Design Credit
