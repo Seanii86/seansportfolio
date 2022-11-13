@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/seansportfolio/static/css/main.0586e5e4.css",
-    "main.js": "/seansportfolio/static/js/main.0e098e49.js",
+    "main.js": "/seansportfolio/static/js/main.9fb80d42.js",
     "static/js/787.389c16b4.chunk.js": "/seansportfolio/static/js/787.389c16b4.chunk.js",
     "static/media/helvetica-neu.ttf": "/seansportfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "/seansportfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
@@ -9,11 +9,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/seansportfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/seansportfolio/index.html",
     "main.0586e5e4.css.map": "/seansportfolio/static/css/main.0586e5e4.css.map",
-    "main.0e098e49.js.map": "/seansportfolio/static/js/main.0e098e49.js.map",
+    "main.9fb80d42.js.map": "/seansportfolio/static/js/main.9fb80d42.js.map",
     "787.389c16b4.chunk.js.map": "/seansportfolio/static/js/787.389c16b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0586e5e4.css",
-    "static/js/main.0e098e49.js"
+    "static/js/main.9fb80d42.js"
   ]
 }
