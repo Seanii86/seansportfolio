@@ -1,0 +1,28 @@
+{
+    "Projects" : [
+        {
+            "thumbnail": "/projects/alpha/alpha.png",
+            "title": "Task manager application",
+            "description": "Python, HTML, CSS, and Django. A Task manager application designed for users to keep track of tasks they need to meet, with ability to login/sinup for a user dashboard.",
+            "url": "https://gitlab.com/Seanii86/project-alpha"
+        },
+        {
+            "thumbnail": "/projects/beta/beta.png",
+            "title": "Automobile dealership management",
+            "description": "Python, JavaScript, PostgreSQL, RabbitMQ, RESTFUL API, microservices, Django, React.js",
+            "url": "https://gitlab.com/Seanii86/project-beta"
+        },
+        {
+            "thumbnail": "/projects/fearless/fearless-frontend.png",
+            "title": "Conferences application",
+            "description": "Python, Js, Django, SQLite3, RabbitMQ, Event sourcing, Message passing, RESTFUL API. Designed to house conventions, attendees, presentations, and presenters while fetching data from two third party APIs.",
+            "url": "https://gitlab.com/Seanii86/fearless-frontend"
+        },
+        {
+            "thumbnail": "/projects/scrumptious/scrumptious.png",
+            "title": "Scrumptious recipies",
+            "description": "Python, HTML, CSS, Django. A recipies single-page-application designed for users to register and keep track of recipies with a social sharing function. - Object oriented design",
+            "url": "https://gitlab.com/Seanii86/scrumptious-recipes-hardening"
+        }
+    ]
+}
