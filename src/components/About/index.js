@@ -28,9 +28,19 @@ const About = () => {
                         idx={15}
                     />
                 </h1>
-                <p>Fill</p>
-                <p>This in</p>
-                <p>Later</p>
+                <p>I'm a very autonomous developer, passionate for working in teams,
+                    and looking for a role as a font-end/back-end developer at an established
+                    tech or startup company that uses the latest technologies to tackle
+                    diverse projects.
+                </p>
+                <p>I am quite confident of my ability to problem solve, investing all the time
+                    I have to work on perpetual projects one step at a time.
+                </p>
+                <p> To describe myself, I am quiet by nature and find myself escaping time
+                    when I need to solve complex problems or algorithms. However I love meeting new people
+                    to discover their interests' other than my own of cooking, car modification, and being obsessed
+                    with tech. 👨‍💻
+                </p>
             </div>
             <div className='stage-cube-cont'>
                 <div className='cube-spinner'>

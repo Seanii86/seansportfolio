@@ -96,6 +96,12 @@
             }
         }
 
+        a.timeline-link {
+            &:after {
+                content: 'TIMELINE';
+            }
+        }
+
         a.active {
             svg {
                 color: #ffd700

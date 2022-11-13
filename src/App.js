@@ -6,6 +6,7 @@ import Home from './components/home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Timeline from './components/Timeline';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/Portfolio' element={<Portfolio />} />
+          <Route path='/timeline' element={<Timeline />} />
         </Route>
       </Routes>
     </>

@@ -1,0 +1,51 @@
+body {
+    font-family: "Coolvetica";
+    font-size: 16px;
+    color: #000;
+}
+
+h1.page-title {
+    margin-left: 300px;
+    margin-bottom: 300px;
+}
+
+.timeline-container {
+    position: relative;
+    top: -50px;
+    left: 80px;
+    bottom: 10px;
+}
+
+h3 {
+    padding-top: 15px;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+     0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.date {
+    color: #ffd700;
+    
+}
+
+#description {
+    margin: 1.5em 0 2em 0;
+    color:#000;
+}
+
+.button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color:#000;
+}
+
+.schoolButton {
+    background-color: #8d8d8d;
+}
+
+.schoolButton:hover {
+    background-color: #0ac593;
+}

@@ -40,7 +40,8 @@
 
 .container.about-page,
 .container.contact-page,
-.container.portfolio-page {
+.container.portfolio-page,
+.container.timeline-page {
 
     h1 {
         font-size: 53px;
@@ -78,7 +79,7 @@
     }
 
     p {
-        font-style: 13px;
+        font-size: 17px;
         color: white;
         font-family: sans-serif;
         font-weight: 300;
@@ -128,7 +129,8 @@
 
         &.about-page,
         &.contact-page,
-        &.portfolio-page {
+        &.portfolio-page,
+        &.timeline-page {
             .text-area {
                 position: initial;
                 transform: none;
