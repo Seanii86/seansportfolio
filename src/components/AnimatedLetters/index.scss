@@ -12,8 +12,10 @@
     animation-fill-mode: both;
 
     &:hover {
-        animation: rubberBand 1s;
+        animation: wobble 2s;
+        animation-iteration-count: infinite;
         color: #ffd700;
+        cursor: pointer;
     }
 }
 
