@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Timeline from './components/Timeline';
+import BrewHopp from './components/BrewHop';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/Portfolio' element={<Portfolio />} />
           <Route path='/timeline' element={<Timeline />} />
+          <Route path='/brewhoppers' element={<BrewHopp />} />
         </Route>
       </Routes>
     </>
