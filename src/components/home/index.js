@@ -14,10 +14,9 @@ const Home = () => {
     const jobArray = "Software Engineer".split("")
 
     useEffect(() => {
-        return () => setTimeout(() => {
-          setLetterClass('text-animate-hover')
-        }, 4000)
-      }, [setLetterClass])
+        const timer = setTimeout(() => setLetterClass('text-animate-hover'), 4050);
+        return () => clearTimeout(timer);
+    }, []);
 
 
     return (
