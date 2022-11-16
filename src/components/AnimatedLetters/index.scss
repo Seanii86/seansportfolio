@@ -10,9 +10,10 @@
   min-width: 10px;
   display: inline-block;
   animation-fill-mode: both;
+  animation: rubberBand 1s;
 
   &:hover {
-      animation: rubberBand 1s;
+      animation: none;
       color: #ffd700;
   }
 }

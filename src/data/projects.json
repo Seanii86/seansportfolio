@@ -9,7 +9,7 @@
         {
             "thumbnail": "./projects/beta/beta.png",
             "title": "Automobile dealership management",
-            "description": "Python, JavaScript, PostgreSQL, RabbitMQ, RESTFUL API, microservices, Django, React.js",
+            "description": "A full-stack application integrated with microservices to manage car dealership management. Django, React, REST API",
             "url": "https://gitlab.com/Seanii86/project-beta"
         },
         {

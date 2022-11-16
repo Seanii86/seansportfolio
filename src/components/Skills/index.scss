@@ -1,0 +1,17 @@
+.tagcloud-wrap {
+  background: transparent;
+    float: right;
+    width: 1200px;
+  
+    .tagcloud {
+      color: #ffd700;
+      font-family: 'Coolvetica', sans-serif;
+      font-size: 20px;
+      font-weight: 650;
+      margin: -50px auto;;
+    }
+    .tagcloud--item:hover {
+      color: #00ff7f;
+      cursor: pointer;
+    }
+  }

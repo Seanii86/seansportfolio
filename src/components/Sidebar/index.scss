@@ -108,6 +108,12 @@
             }
         }
 
+        a.skills-link {
+            &:after {
+                content: 'Skills';
+            }
+        }
+
         a.active {
             svg {
                 color: #ffd700

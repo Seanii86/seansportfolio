@@ -10,11 +10,13 @@ const Layout = () => {
                 <span className='tags top-tags'>&lt;body&gt;</span>
 
                 <Outlet />
-
                 <span className='tags bottom-tags'>
-                &lt;/body&gt;
-                <br />
-                <span className='bottom-tag-html'>&lt;/html&gt;</span>
+                    <div id='stars'></div>
+                    <div id='stars2'></div>
+                    <div id='stars3'></div>
+                    &lt;/body&gt;
+                    <br />
+                    <span className='bottom-tag-html'>&lt;/html&gt;</span>
                 </span>
             </div>
         </div>
