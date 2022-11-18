@@ -1,13 +1,14 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
-  background: #022c43;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;

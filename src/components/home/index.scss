@@ -11,7 +11,7 @@
 
     h1 {
         color: #fff;
-        font-size: 53px;
+        font-size: 48px;
         margin: 0;
         font-family: "Coolvetica";
         font-weight: 400;
@@ -80,7 +80,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .tags,
+    .tags, 
     .home-page h1::before,
     .home-page h1:after {
         display: none;
@@ -119,6 +119,8 @@
                 bottom: auto;
                 left: 0;
                 margin: auto;
+                z-index: 2;
+
             }
         }
     }

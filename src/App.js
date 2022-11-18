@@ -6,7 +6,6 @@ import Home from './components/home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import Timeline from './components/Timeline';
 import Skills from './components/Skills';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/Portfolio' element={<Portfolio />} />
-          <Route path='/timeline' element={<Timeline />} />
           <Route path='/skills' element={<Skills />} />
         </Route>
       </Routes>

@@ -35,7 +35,7 @@ const Home = () => {
                         strArray={nameArray}
                         idx={15} />
                     <br />
-                    <AnimatedLetters 
+                    <AnimatedLetters
                         letterClass={letterClass}
                         strArray={jobArray}
                         idx={22} />

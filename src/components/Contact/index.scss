@@ -18,7 +18,6 @@
             opacity: 0;
             animation: fadeInUp 2s 2s;
             animation-fill-mode: forwards;
-            clear: both;
         }
 
         li.half {
@@ -54,6 +53,7 @@
         color: #fff;
         padding: 20px;
         box-sizing: border-box;
+        min-height: 150px;
     }
 
     .flat-button {
@@ -114,8 +114,7 @@
     .map-wrap {
         float: none;
         width: 100%;
-        height: 400px;
-        margin: 0;
+        height: 500px;
     }
 
     .info-map {
