@@ -1,10 +1,11 @@
 {
     "Projects" : [
         {
-            "thumbnail": "./projects/alpha/alpha.png",
-            "title": "Task manager application",
-            "description": "Python, HTML, CSS, and Django. A Task manager application designed for users to keep track of tasks they need to meet, with ability to login/sinup for a user dashboard.",
-            "url": "https://gitlab.com/Seanii86/project-alpha"
+            "thumbnail": "./projects/brewhop/bh.png",
+            "title": "BrewHop",
+            "description": "FastAPI and React application with three integrated microservices (Accounts, favorites, yelpAPI). Allows users to create accounts, search for local breweries and favorite them",
+            "url": "https://gitlab.com/brewhoppers/brew-hop",
+            "demo": "https://brewhoppers.gitlab.io/brew-hop/"
         },
         {
             "thumbnail": "./projects/beta/beta.png",
@@ -19,7 +20,11 @@
             "url": "https://gitlab.com/Seanii86/fearless-frontend"
         },
         {
-            "thumbnail": "./projects/scrumptious/scrumptious.png",
+            "title": "Task manager application",
+            "description": "Python, HTML, CSS, and Django. A Task manager application designed for users to keep track of tasks they need to meet, with ability to login/sinup for a user dashboard.",
+            "url": "https://gitlab.com/Seanii86/project-alpha"
+        },
+        {
             "title": "Scrumptious recipies",
             "description": "Python, HTML, CSS, Django. A recipies single-page-application designed for users to register and keep track of recipies with a social sharing function. - Object oriented design",
             "url": "https://gitlab.com/Seanii86/scrumptious-recipes-hardening"

@@ -25,13 +25,18 @@
         overflow: hidden;
         border-radius: 10px;
         max-width: calc(25% - 10px);
+        object-fit: fill;
 
         .project-image {
             position: absolute;
             z-index: 2;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: fill;
+        }
+
+        .gif-img {
+            width: 100%;
         }
 
         .content {
@@ -40,18 +45,16 @@
             z-index: 3;
             padding: 10px 20px;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-            background: linear-gradient(
-                180deg,
-                rgba(0, 0, 0, 0.2) 0,
-                rgba(0, 0, 0, 1)
-            );
+            background: linear-gradient(180deg,
+                    rgba(0, 0, 0, 0.2) 0,
+                    rgba(0, 0, 0, 1));
             bottom: -70px
         }
 
         .title {
             margin-bottom: 0;
             margin-top: 0;
-            color:  #fff;
+            color: #fff;
             font-size: 24px;
             font-weight: 500;
             line-height: 24px;
@@ -59,7 +62,7 @@
 
         .description {
             font-size: 14px;
-            margin-bottom: 5px ;
+            margin-bottom: 5px;
             margin-right: 21px;
             color: #fff;
             font-weight: 300;
@@ -83,9 +86,31 @@
             cursor: pointer;
         }
 
+        .demo-btn {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding: 0 23px;
+            height: 40px;
+            line-height: 34px;
+            border: 2px solid #FF3131;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #fff;
+            background: transparent;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            cursor: pointer;
+        }
+
         .btn:hover {
             transform: translateY(-3px);
             background: #ffd700;
+        }
+
+        .demo-btn:hover {
+            transform: translateY(-3px);
+            background: #FF3131;
         }
 
         &:after {
@@ -116,27 +141,39 @@
 
 @media screen and (max-width: 1200px) {
     .container.portfolio-page {
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
+        .images-container {
+            display:flex;
 
-        .image {
-            .description {
-                display: none;
-            }
+            .image {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                padding: 40px;
 
-            .title {
-                font-size: 10px;
-                display: block;
-                transform: initial;
-            }
+                .description {
+                    display: none;
+                }
 
-            .btn {
-                border: 2px solid #ffd700;
-                width: 50px;
-                height: 25px;
-                padding: 0 5px;
-                font-size: 10px;
+                .title {
+                    font-size: 10px;
+                    display: block;
+                    transform: initial;
+                }
+
+                .btn {
+                    border: 2px solid #ffd700;
+                    width: 50px;
+                    height: 25px;
+                    padding: 0 5px;
+                    font-size: 10px;
+                }
+
+                .demo-btn {
+                    border: 2px solid #FF3131;
+                    width: 50px;
+                    height: 25px;
+                    padding: 0 5px;
+                    font-size: 10px;
+                }
             }
         }
     }
