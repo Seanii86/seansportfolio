@@ -29,7 +29,7 @@ const Portfolio = () => {
                                     alt='project'
                                     className='project-image' />
                                     :
-                                    <Agif className='gif-img' />
+                                    <Agif className='agif-img' />
                                 }
                                 <div className='content'>
                                     <p className='title'>{p.title}</p>
