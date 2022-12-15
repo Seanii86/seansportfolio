@@ -28,7 +28,7 @@ const About = () => {
                     />
                 </h1>
                 <p>I'm a very autonomous developer, passionate for working in teams,
-                    and looking for a role as a font-end/back-end developer at an established
+                    and looking for a role as a front-end/back-end developer at an established
                     tech or startup company that uses the latest technologies to tackle
                     diverse projects.
                 </p>
