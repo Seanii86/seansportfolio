@@ -7,6 +7,7 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+        z-index: 1;
     }
 
     h1 {
@@ -69,13 +70,66 @@
         border: 1px solid #ffd700;
         margin-top: 25px;
         float: left;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: lightSpeedInLeft 1s 1.8s backwards;
         white-space: nowrap;
 
         &:hover {
             background: #ffd700;
             color: #333
         }
+    }
+
+    .resume-btn {
+        color:#ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 3mm 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        margin-left: 5px;
+        float: left;
+        animation: lightSpeedInRight 1s 2s backwards;
+        white-space: nowrap;
+        background: transparent;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+            cursor: pointer;
+        }
+    }
+
+    .close-resume-btn {
+        color:#ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        padding: 3mm 18px;
+        border: 1px solid #ffd700;
+        animation: lightSpeedInRight 1s 2s backwards;
+        white-space: nowrap;
+        background: transparent;
+        position: relative;
+        bottom: 22cm;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+            cursor: pointer;
+        }
+    }
+
+    .pdf-modal {
+        position: relative;
+        height: 22cm;
+        width: 20cm;
+        bottom: 9cm;
+        left: 22cm;
+        animation: fadeInUp 1.7s;
     }
 }
 
@@ -100,6 +154,10 @@
             display: block;
             margin-top: 20px auto 0 auto;
             width: 125px;
+        }
+
+        .resume-btn {
+            display: none;
         }
 
         .logo-container {

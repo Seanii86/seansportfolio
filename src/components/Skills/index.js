@@ -3,21 +3,11 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import WordCloud from './skillsCloud'
-import FileSaver from 'file-saver';
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const skillsArray = 'Skills'.split("")
-
-
-
-  const downloadResume = () => {
-    FileSaver.saveAs(
-    process.env.REACT_APP_CLIENT_URL + "/assets/resume.pdf",
-    "SEANSAINZ-12-15-22.pdf");
-    console.log("DOWNLOADING:::", process.env.REACT_APP_CLIENT_URL + "/assets/resume.pdf")
-  }
 
   useEffect(() => {
     const timer = setTimeout(() => setLetterClass('text-animate-hover'), 4050);
@@ -43,11 +33,6 @@ const Skills = () => {
             With countless hours of experience with frameworks such as <span>Django</span>, <span>FastAPI</span>, and <span>React</span>. I'm trained in environments
             such as <span>NodeJS</span>, <span>NextJs</span>, <span>SwaggerUI</span>, and <span>RESTful API Architecture</span>. <br /> Practicing Domain Driven Design with microservices.
           </p>
-
-          <div className='resume-btn'>
-            <button onClick={downloadResume}>My resume</button>
-          </div>
-
         </div>
 
         <div className="tagcloud-wrap">

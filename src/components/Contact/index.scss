@@ -12,7 +12,6 @@
             margin: 0;
             list-style: none;
             margin-bottom: 10px;
-            overflow: hidden;
             display: block;
             position: relative;
             opacity: 0;
@@ -24,8 +23,8 @@
             width: 49%;
             margin-left: 2%;
             float: left;
-            clear: none;
-
+            z-index: 1;
+            
             &:first-child {
                 margin-left: 0;
             }
@@ -67,6 +66,11 @@
         float: right;
         border-radius: 4px;
         cursor: pointer;
+
+        &:hover {
+            background-color: #ffd700;
+            color: #fff;
+        }
     }
 }
 

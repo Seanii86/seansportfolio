@@ -202,9 +202,22 @@ $shadows-big: multiple-box-shadow(200);
   }
 }
 
+.footer {
+  position: fixed;
+  right: 45px; bottom: 0px;
+  animation: pulse 2s infinite;
+
+  a {
+    font-size: 30px;
+
+    &:hover svg {
+      color:#ffd700;
+      animation: jello 1s;
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
-
-
   .page {
     position: initial;
   }

@@ -5,6 +5,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import projectsData from '../../data/projects.json'
 import Agif from './Thumbnail';
 
+
 const Portfolio = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -15,8 +16,6 @@ const Portfolio = () => {
     }, []);
 
 
-
-
     const renderProjects = (Projects) => {
         return (
             <div className='images-container'>
@@ -25,9 +24,9 @@ const Portfolio = () => {
                         return (
                             <div className='image' key={idx}>
                                 {p.thumbnail ?
-                                <img src={p.thumbnail}
-                                    alt='project'
-                                    className='project-image' />
+                                    <img src={p.thumbnail}
+                                        alt='project'
+                                        className='project-image' />
                                     :
                                     <Agif className='agif-img' />
                                 }
