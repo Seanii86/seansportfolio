@@ -70,7 +70,7 @@
         border: 1px solid #ffd700;
         margin-top: 25px;
         float: left;
-        animation: lightSpeedInLeft 1s 1.8s backwards;
+        animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
 
         &:hover {
@@ -91,7 +91,7 @@
         margin-top: 25px;
         margin-left: 5px;
         float: left;
-        animation: lightSpeedInRight 1s 2s backwards;
+        animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
         background: transparent;
 

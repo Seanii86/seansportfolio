@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters'
 import projectsData from '../../data/projects.json'
-import Agif from './Thumbnail';
 
 
 const Portfolio = () => {
@@ -28,7 +27,9 @@ const Portfolio = () => {
                                         alt='project'
                                         className='project-image' />
                                     :
-                                    <Agif className='agif-img' />
+                                    <img src='/projects/default/django.png'
+                                    alt='project'
+                                    className='project-image' />
                                 }
                                 <div className='content'>
                                     <p className='title'>{p.title}</p>
@@ -37,6 +38,10 @@ const Portfolio = () => {
                                         className='btn'
                                         onClick={() => window.open(p.url)}>
                                         GitLab
+                                    </button>
+                                    <button
+                                    className='btn'>
+                                        Info
                                     </button>
                                     {p.demo ?
                                         <button
