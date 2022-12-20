@@ -2,18 +2,18 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { getStorage } from "firebase/storage";
-import { getFirestore } from "firebase/firestore/lite";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCw97tqO1u-uOzlfYZvE53LNpf2ZDx6u8c",
-  authDomain: "portfolio-dashboard-e7859.firebaseapp.com",
-  projectId: "portfolio-dashboard-e7859",
-  storageBucket: "portfolio-dashboard-e7859.appspot.com",
-  messagingSenderId: "555089536025",
-  appId: "1:555089536025:web:ec173791bbffae585d7688"
+  apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
+  projectId: `${process.env.REACT_APP_PROJECT_ID}`,
+  storageBucket: `${process.env.REACT_APP_STORAGE_BUCKET}`,
+  messagingSenderId: `${process.env.REACT_APP_MESSAGE_SEND_ID}`,
+  appId: `${process.env.REACT_APP_ID}`
 };
 
 // Initialize Firebase

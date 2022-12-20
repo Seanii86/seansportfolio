@@ -17,7 +17,7 @@ export default function Dashboard() {
                 setUser(null);
             }
         })
-    }, []);
+    }, [auth]);
 
 
     return (

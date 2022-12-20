@@ -1,61 +1,83 @@
-import { useRef } from "react";
-import { auth, db, storage } from "../../firebase";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { useRef } from 'react';
+import { auth, storage, db } from '../../firebase';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { addDoc } from 'firebase/firestore';
-import { collection } from 'firebase/firestore/lite'
+import { collection } from 'firebase/firestore';
 
-export default function Home() {
+
+const Home = () => {
     const form = useRef();
 
-    const submitProject = (e) => {
+    const submitPortfolio = (e) => {
         e.preventDefault();
         const name = form.current[0]?.value;
         const description = form.current[1]?.value;
         const repo = form.current[2]?.value;
-        const image = form.current[3]?.files[0];
-        const demo = form.current[4]?.value;
-
-        console.log(name, description, repo, image, demo)
+        const demo = form.current[3]?.value;
+        const image = form.current[4]?.files[0];
 
         const storageRef = ref(storage, `portfolio/${image.name}`)
+
+
+        ref(storage, `portfolio/${image.name}`);
 
         uploadBytes(storageRef, image).then(
             (snapshot) => {
                 getDownloadURL(snapshot.ref).then((downloadUrl) => {
-                    saveProject({
+                    savePortfolio({
                         name,
                         description,
                         repo,
-                        image: downloadUrl,
                         demo,
+                        image: downloadUrl
                     })
+                }, (error) => {
+                    console.log(error);
+                    savePortfolio({
+                        name,
+                        description,
+                        repo,
+                        demo,
+                        image: null
+                    })
+                })
+            }, (error) => {
+                console.log(error);
+                savePortfolio({
+                    name,
+                    description,
+                    repo,
+                    demo,
+                    image: null
                 })
             }
         )
     }
 
-
-    const saveProject = async (portfolio) => {
-        console.log(portfolio);
+    const savePortfolio = async (portfolio) => {
         try {
             await addDoc(collection(db, 'portfolio'), portfolio);
             window.location.reload(false);
         } catch (error) {
-            alert('Failed :(', error)
+            alert('Failed to add portfolio');
+            console.log(error);
         }
     }
-    
+
     return (
         <div className="dashboard">
-            <form ref={form} onSubmit={submitProject}>
-                <p><input type='text' placeholder="name" /></p>
-                <p><textarea placeholder="description"  /></p>
-                <p><input type='text' placeholder="repo"  /></p>
-                <p><input type='file' placeholder="image" /></p>
-                <p><input type='text' placeholder="demo" /></p>
+
+            <form ref={form} onSubmit={submitPortfolio}>
+                <p><input type="text" placeholder="Name" required={true} /></p>
+                <p><textarea placeholder="Description" /></p>
+                <p><input type="text" placeholder="Repo" /></p>
+                <p><input type="text" placeholder="Demo" /></p>
+                <p><input type="file" placeholder="Image"/><br />Project Image</p>
                 <button type="submit">Submit</button>
                 <button onClick={() => auth.signOut()}>Sign out</button>
             </form>
         </div>
     )
 }
+
+export default Home;
