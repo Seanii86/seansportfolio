@@ -137,6 +137,15 @@
     }
 }
 
+.details-modal {
+    width: 21cm;
+    height: 21cm;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
 @media screen and (max-width: 1200px) {
     .container.portfolio-page {
         .images-container {

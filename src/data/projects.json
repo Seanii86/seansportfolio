@@ -1,6 +1,7 @@
 {
     "Projects" : [
         {
+            "idx": 0,
             "thumbnail": "./projects/brewhop/bh.png",
             "title": "BrewHop",
             "description": "FastAPI and React application with three integrated microservices (Accounts, favorites, yelpAPI). Allows users to create accounts, search for local breweries and favorite them",
@@ -8,23 +9,27 @@
             "demo": "https://brewhoppers.gitlab.io/brew-hop/"
         },
         {
+            "idx": 1,
             "thumbnail": "./projects/beta/beta.png",
             "title": "Automobile dealership management",
             "description": "A full-stack application integrated with microservices to manage car dealership management. Django, React, REST API",
             "url": "https://gitlab.com/Seanii86/project-beta"
         },
         {
+            "idx": 2,
             "thumbnail": "./projects/fearless/fearless-frontend.png",
             "title": "Conferences application",
             "description": "Python, Js, Django, SQLite3, RabbitMQ, Event sourcing, Message passing, RESTFUL API. Designed to house conventions, attendees, presentations, and presenters while fetching data from two third party APIs.",
             "url": "https://gitlab.com/Seanii86/fearless-frontend"
         },
         {
+            "idx": 3,
             "title": "Task manager application",
             "description": "Python, HTML, CSS, and Django. A Task manager application designed for users to keep track of tasks they need to meet, with ability to login/sinup for a user dashboard.",
             "url": "https://gitlab.com/Seanii86/project-alpha"
         },
         {
+            "idx": 4,
             "title": "Scrumptious recipies",
             "description": "Python, HTML, CSS, Django. A recipies single-page-application designed for users to register and keep track of recipies with a social sharing function. - Object oriented design",
             "url": "https://gitlab.com/Seanii86/scrumptious-recipes-hardening"

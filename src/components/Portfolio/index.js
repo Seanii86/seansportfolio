@@ -3,11 +3,13 @@ import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters'
 import projectsData from '../../data/projects.json'
+import ProjectDetails from './Detailed'
 
 
 const Portfolio = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
+    const [selectedProject, setSelectedProject] = useState(null)
 
     useEffect(() => {
         const timer = setTimeout(() => setLetterClass('text-animate-hover'), 3000);
@@ -17,45 +19,58 @@ const Portfolio = () => {
 
     const renderProjects = (Projects) => {
         return (
-            <div className='images-container'>
-                {
-                    Projects.map((p, idx) => {
-                        return (
-                            <div className='image' key={idx}>
-                                {p.thumbnail ?
-                                    <img src={p.thumbnail}
-                                        alt='project'
-                                        className='project-image' />
-                                    :
-                                    <img src='/projects/default/django.png'
-                                    alt='project'
-                                    className='project-image' />
-                                }
-                                <div className='content'>
-                                    <p className='title'>{p.title}</p>
-                                    <h4 className='description'>{p.description}</h4>
-                                    <button
-                                        className='btn'
-                                        onClick={() => window.open(p.url)}>
-                                        GitLab
-                                    </button>
-                                    <button
-                                    className='btn'>
-                                        Info
-                                    </button>
-                                    {p.demo ?
+            <>
+                <div className='images-container'>
+                    {
+                        Projects.map((p, idx) => {
+                            return (
+                                <div className='image' key={idx}>
+                                    {p.thumbnail ?
+                                        <img src={p.thumbnail}
+                                            alt='project'
+                                            className='project-image' />
+                                        :
+                                        <img src='/projects/default/django.png'
+                                            alt='project'
+                                            className='project-image' />
+                                    }
+                                    <div className='content'>
+                                        <p className='title'>{p.title}</p>
+                                        <h4 className='description'>{p.description}</h4>
                                         <button
-                                            className='demo-btn'
-                                            onClick={() => window.open(p.demo)}>
-                                            Live Demo
+                                            className='btn'
+                                            onClick={() => window.open(p.url)}>
+                                            GitLab
                                         </button>
-                                        : null}
+                                        <button
+                                            className='btn'
+                                            onClick={() => setSelectedProject(p.idx)}>
+                                            Info
+                                        </button>
+                                        {p.demo ?
+                                            <button
+                                                className='demo-btn'
+                                                onClick={() => window.open(p.demo)}>
+                                                Live Demo
+                                            </button>
+                                            : null}
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+                            )
+                        })
+                    }
+                </div>
+                <div>
+                    {selectedProject >= 1
+                        ?
+                        <iframe className='details-modal' title='detailedview' url='/projects/default/django.png'>
+                            <ProjectDetails projectsData={projectsData} projectId={selectedProject} />
+                        </iframe>
+                        :
+                        null
+                    }
+                </div>
+            </>
         );
     }
 
