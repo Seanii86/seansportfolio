@@ -93,7 +93,7 @@ const Portfolio = () => {
                         idx={15}
                         
                     />
-                    <FontAwesomeIcon icon={faPlus} color='#4d4d4e' className='plus-btn' />
+                    <FontAwesomeIcon icon={faPlus} color='#4d4d4e' className='plus-btn' onClick={() => navigate("/dashboard")} />
                 </h1>
                 <div>{renderProjects(portfolio)}</div>
             </div>
