@@ -16,7 +16,6 @@
     "cors-anywhere": "^0.4.4",
     "file-saver": "^2.0.5",
     "firebase": "^9.15.0",
-    "gsap": "npm:@gsap/simply@^3.11.3",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
