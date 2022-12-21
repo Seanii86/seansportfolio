@@ -21,7 +21,7 @@ const WordCloud = () => {
     'MySQl',
     'Python',
     'Django',
-    'Git',
+    'Git'
   ]
   const options = {
     radius: 450,
@@ -30,7 +30,7 @@ const WordCloud = () => {
     maxSpeed: 'normal',
     initSpeed: 'fast',
     direction: 90,
-    keep: false,
+    keep: false
   }
   // eslint-disable-next-line
   useEffect(() => {
@@ -39,7 +39,6 @@ const WordCloud = () => {
       setLoad(false)
     }
   })
-
 
 
   return (
