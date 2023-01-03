@@ -2,7 +2,6 @@ import './index.scss';
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters'
-import ProjectDetails from './Detailed'
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../../firebase'
 import { useNavigate } from 'react-router';
@@ -12,10 +11,11 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Portfolio = () => {
 
+
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [selectedProject, setSelectedProject] = useState(null)
     const [portfolio, setPortfolio] = useState([])
     const navigate = useNavigate()
+
 
     useEffect(() => {
         const timer = setTimeout(() => setLetterClass('text-animate-hover'), 3000);
@@ -31,6 +31,7 @@ const Portfolio = () => {
         setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
     }
 
+    
     const renderProjects = (Projects) => {
         return (
             <>
@@ -50,11 +51,6 @@ const Portfolio = () => {
                                             onClick={() => window.open(p.repo)}>
                                             GitLab
                                         </button>
-                                        <button
-                                            className='btn'
-                                            onClick={() => setSelectedProject(p.idx)}>
-                                            Info
-                                        </button>
                                         {p.demo ?
                                             <button
                                                 className='demo-btn'
@@ -66,16 +62,6 @@ const Portfolio = () => {
                                 </div>
                             )
                         })
-                    }
-                </div>
-                <div>
-                    {selectedProject >= 1
-                        ?
-                        <iframe className='details-modal' title='detailedview' url='/projects/default/django.png'>
-                            <ProjectDetails projectsData={portfolio} projectId={selectedProject} />
-                        </iframe>
-                        :
-                        null
                     }
                 </div>
             </>
