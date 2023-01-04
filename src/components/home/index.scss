@@ -131,6 +131,14 @@
         left: 22cm;
         animation: fadeInUp 1.7s;
     }
+
+    .cert-modal {
+        position: absolute;
+        top: 10cm;
+        width: 100%;
+        height: 56%;
+        animation: fadeInUp 1.7s;
+    }
 }
 
 @media screen and (max-width: 1200px) {

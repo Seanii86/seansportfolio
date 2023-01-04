@@ -31,6 +31,20 @@ const Home = () => {
         )
     }
 
+
+    const CertificateModal = (props) => {
+        return (
+            <div>
+                <iframe
+                    src={props.src}
+                    className="cert-modal"
+                    title='certificate'>
+                </iframe>
+            </div>
+        )
+    }
+
+
     return (
         <>
             <div className="container home-page">
@@ -58,6 +72,7 @@ const Home = () => {
                         ?
                         <>
                             <PDFModal src="assets/resume.pdf" />
+                            <CertificateModal src="assets/HR-Cert.pdf" />
                             <Button
                                 className='close-resume-btn'
                                 onClick={() => setShown(!shown)}>
