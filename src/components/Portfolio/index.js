@@ -31,16 +31,6 @@ const Portfolio = () => {
         setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
     }
 
-    const viewInfo = () => {
-        return (
-
-            <iframe className='iframe-modal' src="" width="100%" height="300" title="Select Project Details">
-                "test"
-            </iframe>
-        )
-    }
-
-
     const renderProjects = (Projects) => {
         return (
             <>
@@ -58,11 +48,7 @@ const Portfolio = () => {
                                         <button
                                             className='btn'
                                             onClick={() => window.open(p.repo)}>
-                                            GitLab
-                                        </button>
-                                        <button className='btn'
-                                            onClick={viewInfo}>
-                                            Info
+                                            Repo
                                         </button>
                                         {p.demo ?
                                             <button
