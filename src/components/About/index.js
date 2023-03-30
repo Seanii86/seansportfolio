@@ -27,18 +27,14 @@ const About = () => {
                         idx={15}
                     />
                 </h1>
-                <p>I'm a very autonomous developer, passionate for working in teams,
-                    and looking for a role as a front-end/back-end developer at an established
-                    tech or startup company that uses the latest technologies to tackle
-                    diverse projects.
+                <p>Although I am quiet by nature, I love meeting new people and working on teams to solve complex
+                    problems or algorithms. I am very interested in business app modeling and development. This was my primary
+                    focus during my education. I would love the opportunity to demonstrate my skills.
                 </p>
-                <p>I am quite confident of my ability to problem solve, investing all the time
-                    I have to work on perpetual projects one step at a time.
+                <p>I am quite confident in my ability to problem solve, I am able to invest all my time to work on perpetual projects.
                 </p>
-                <p> To describe myself, I am quiet by nature and find myself escaping time
-                    when I need to solve complex problems or algorithms. However I love meeting new people
-                    to discover their interests' other than my own of cooking, car modification, and being obsessed
-                    with tech. 👨‍💻
+                <p>
+                    In my spare time I enjoy cooking, car modification, and obsessing in tech.
                 </p>
             </div>
             <div className='stage-cube-cont'>

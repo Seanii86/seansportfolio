@@ -49,7 +49,7 @@ const Contact = () => {
                 </h1>
                 <p className='p-style'>
                     I am interested in freelance opportunities - especially in creating
-                    SPA websites for your needs. However, if you have any other questions or
+                    your business website. However, if you have any other questions or
                     requests, don't hesitate to fill out this simple form and I will get back to you
                     within 72 hours.
                 </p>

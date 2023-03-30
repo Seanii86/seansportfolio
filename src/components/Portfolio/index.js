@@ -31,7 +31,16 @@ const Portfolio = () => {
         setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
     }
 
-    
+    const viewInfo = () => {
+        return (
+
+            <iframe className='iframe-modal' src="" width="100%" height="300" title="Select Project Details">
+                "test"
+            </iframe>
+        )
+    }
+
+
     const renderProjects = (Projects) => {
         return (
             <>
@@ -40,9 +49,9 @@ const Portfolio = () => {
                         Projects.map((p, idx) => {
                             return (
                                 <div className='image' key={idx}>
-                                        <img src={p.image}
-                                            alt='project'
-                                            className='project-image' />
+                                    <img src={p.image}
+                                        alt='project'
+                                        className='project-image' />
                                     <div className='content'>
                                         <p className='title'>{p.name}</p>
                                         <h4 className='description'>{p.description}</h4>
@@ -50,6 +59,10 @@ const Portfolio = () => {
                                             className='btn'
                                             onClick={() => window.open(p.repo)}>
                                             GitLab
+                                        </button>
+                                        <button className='btn'
+                                            onClick={viewInfo}>
+                                            Info
                                         </button>
                                         {p.demo ?
                                             <button
@@ -75,9 +88,9 @@ const Portfolio = () => {
                 <h1 className='page-title'>
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={'Portfolio'.split("")}
+                        strArray={'My Projects'.split("")}
                         idx={15}
-                        
+
                     />
                     <FontAwesomeIcon icon={faPlus} color='#4d4d4e' className='plus-btn' onClick={() => navigate("/dashboard")} />
                 </h1>
