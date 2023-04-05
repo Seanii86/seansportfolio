@@ -30,6 +30,7 @@
     "react-vertical-timeline-component": "^3.5.2",
     "sass": "^1.56.1",
     "TagCloud": "^2.2.0",
+    "video.js": "^8.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
