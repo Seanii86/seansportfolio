@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import videojs from "video.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "video.js/dist/video-js.min.css";
 import './index.scss'
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const VideoModal = ({ content, video, closeModal }) => {
     const videoRef = React.useRef();
@@ -23,7 +25,7 @@ const VideoModal = ({ content, video, closeModal }) => {
       <div className="video-modal">
         <div className="video-modal-content">
           <button className="close" onClick={closeModal}>
-            exit
+            <FontAwesomeIcon icon={faXmark} />
           </button>
           {video && (
             <div data-vjs-player>

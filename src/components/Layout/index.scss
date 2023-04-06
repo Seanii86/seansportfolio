@@ -111,7 +111,7 @@
     max-height: 90%;
 
     p span {
-      color: #ffd700;
+      color:#ffd700;
     }
   }
 
@@ -141,7 +141,7 @@ $shadows-big: multiple-box-shadow(200);
 .stars {
   width: 1px;
   height: 1px;
-  background: transparent;
+
   box-shadow: $shadows-small;
   animation: animStar 50s linear infinite;
 
@@ -159,7 +159,7 @@ $shadows-big: multiple-box-shadow(200);
 .stars2 {
   width: 2px;
   height: 2px;
-  background: transparent;
+
   box-shadow: $shadows-medium;
   animation: animStar 100s linear infinite;
 
@@ -177,7 +177,6 @@ $shadows-big: multiple-box-shadow(200);
 .stars3 {
   width: 3px;
   height: 3px;
-  background: transparent;
   box-shadow: $shadows-big;
   animation: animStar 150s linear infinite;
 

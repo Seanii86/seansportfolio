@@ -6,22 +6,24 @@ const WordCloud = () => {
 
   const container = '.content'
   const texts = [
-    'Java',
-    'React',
-    'mongoDB',
-    'PostgreSQL',
-    'FastAPI',
-    'Express',
-    'NodeJS',
-    'Redux',
-    'HTML5',
-    'CSS3',
+    'TypeScript',
     'JavaScript',
-    'FireBase',
-    'MySQl',
     'Python',
-    'Django',
-    'Git'
+    'HTML5',
+    'Tailwind CSS',
+    'SASS/SCSS',
+    'React',
+    'PostgreSQL',
+    'MongoDB',
+    'Prisma',
+    'Three.js/WebGL',
+    'Materialize',
+    'DevOps',
+    'NodeJs',
+    'npm',
+    'Git',
+    'Django4',
+    'FastAPI',
   ]
   const options = {
     radius: 450,
