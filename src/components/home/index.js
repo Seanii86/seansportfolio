@@ -67,7 +67,9 @@ const Home = () => {
                             idx={22} />
                     </h1>
                     <h2>Full stack developer / Software Engineering student</h2>
+
                     <Link to="/portfolio" className='flat-button'>MY PROJECTS</Link>
+                    
                     {shown
                         ?
                         <>
