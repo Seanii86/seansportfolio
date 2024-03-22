@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/seansportfolio/static/css/main.538d8469.css",
+    "main.css": "/seansportfolio/static/css/main.43d08c50.css",
     "main.js": "/seansportfolio/static/js/main.51ab78dc.js",
     "static/js/787.9266f442.chunk.js": "/seansportfolio/static/js/787.9266f442.chunk.js",
     "static/media/helvetica-neu.ttf": "/seansportfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -8,12 +8,12 @@
     "static/media/logo-s.png": "/seansportfolio/static/media/logo-s.bfc9f81846bda5218dab.png",
     "static/media/CoolveticaRg-Regular.woff2": "/seansportfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/seansportfolio/index.html",
-    "main.538d8469.css.map": "/seansportfolio/static/css/main.538d8469.css.map",
+    "main.43d08c50.css.map": "/seansportfolio/static/css/main.43d08c50.css.map",
     "main.51ab78dc.js.map": "/seansportfolio/static/js/main.51ab78dc.js.map",
     "787.9266f442.chunk.js.map": "/seansportfolio/static/js/787.9266f442.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.538d8469.css",
+    "static/css/main.43d08c50.css",
     "static/js/main.51ab78dc.js"
   ]
 }
