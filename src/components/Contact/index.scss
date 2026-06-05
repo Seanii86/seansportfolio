@@ -55,6 +55,20 @@
         min-height: 150px;
     }
 
+    .form-status {
+        margin-top: 12px;
+        font-size: 13px;
+        letter-spacing: 1px;
+
+        &.success {
+            color: #4caf50;
+        }
+
+        &.error {
+            color: #e74c3c;
+        }
+    }
+
     .flat-button {
         color: #ffd700;
         background: 0 0;

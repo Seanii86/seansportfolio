@@ -14,7 +14,8 @@ const Portfolio = () => {
 
 
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [portfolio, setPortfolio] = useState([])
+    const [portfolio, setPortfolio] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [showModal, setShowModal] = useState(false);
     const [modalContent, setModalContent] = useState('');
     const navigate = useNavigate()
@@ -31,7 +32,8 @@ const Portfolio = () => {
 
     const getPortfolio = async () => {
         const querySnapshot = await getDocs(collection(db, 'portfolio'));
-        setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
+        setPortfolio(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        setLoading(false);
     }
 
     const handleInfoClick = (project) => {
@@ -53,24 +55,25 @@ const Portfolio = () => {
                         {
                             Projects.map((p, idx) => {
                                 return (
-                                    <div className='image' key={idx}>
+                                    <div className='image' key={p.id}>
                                         <img src={p.image}
-                                            alt='project'
+                                            alt={p.name}
                                             className='project-image'
+                                            loading='lazy'
                                         />
                                         <div className='content'>
                                             <p className='title'>{p.name}</p>
                                             <h4 className='description'>{p.description}</h4>
                                             <button
                                                 className='btn'
-                                                onClick={() => window.open(p.repo)}>
+                                                onClick={() => window.open(p.repo, '_blank', 'noopener,noreferrer')}>
                                                 Repo
                                             </button>
                                             <button className='btn' onClick={() => handleInfoClick(p)}>Video Demo</button>
                                             {p.demo ?
                                                 <button
                                                     className='demo-btn'
-                                                    onClick={() => window.open(p.demo)}>
+                                                    onClick={() => window.open(p.demo, '_blank', 'noopener,noreferrer')}>
                                                     Live Demo
                                                 </button>
                                                 : null}
@@ -88,7 +91,7 @@ const Portfolio = () => {
         return (
             <>
                 <div className='container portfolio-page'>
-                    <h1 className='page-title'>
+                    <h1 className='page-title' aria-label='My Projects'>
                         <AnimatedLetters
                             letterClass={letterClass}
                             strArray={'My Projects'.split("")}
@@ -97,7 +100,7 @@ const Portfolio = () => {
                         />
                         <FontAwesomeIcon icon={faPlus} color='#4d4d4e' className='plus-btn' onClick={() => navigate("/dashboard")} />
                     </h1>
-                    <div>{renderProjects(portfolio)}</div>
+                    <div>{loading ? <p>Loading projects...</p> : renderProjects(portfolio)}</div>
                     {showModal && <VideoModal content={modalContent.content} video={modalContent.video} closeModal={closeModal} />}
                 </div>
                 <Loader type='line-scale-pulse-out' />

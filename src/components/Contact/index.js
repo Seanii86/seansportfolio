@@ -8,25 +8,27 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 const Contact = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate');
+    const [formStatus, setFormStatus] = useState(null); // 'success' | 'error' | null
     const refForm = useRef()
 
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setFormStatus(null);
         emailjs
             .sendForm(
-                'service_nltni66',
-                'template_v2zl8j1',
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
                 refForm.current,
-                'qyrqqAoOcgvAPho8t',
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
             )
             .then(
                 () => {
-                    alert('Message has been sent!')
-                    window.location.reload(false)
+                    setFormStatus('success');
+                    refForm.current.reset();
                 },
                 () => {
-                    alert('Failed to send message, please try again')
+                    setFormStatus('error');
                 }
             )
     }
@@ -41,7 +43,7 @@ const Contact = () => {
         <>
         <div className='container contact-page'>
             <div className='text-area'>
-                <h1>
+                <h1 aria-label='Contact me'>
                     <AnimatedLetters 
                     letterClass={letterClass} 
                     strArray={'Contact me'.split("")} 
@@ -72,6 +74,12 @@ const Contact = () => {
                                 <input type='submit' className='flat-button' value='SEND' />
                             </li>
                         </ul>
+                        {formStatus === 'success' && (
+                            <p className='form-status success'>Message sent successfully!</p>
+                        )}
+                        {formStatus === 'error' && (
+                            <p className='form-status error'>Failed to send message, please try again.</p>
+                        )}
                     </form>
                 </div>
             </div>
