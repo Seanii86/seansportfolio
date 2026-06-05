@@ -18,7 +18,7 @@ const Skills = () => {
     <>
       <div className="container skills-page">
         <div className="text-area">
-          <h1>
+          <h1 aria-label='Skills'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={skillsArray}

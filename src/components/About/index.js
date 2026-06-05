@@ -20,7 +20,7 @@ const About = () => {
         <>
         <div className='container about-page'>
             <div className='text-area'>
-                <h1>
+                <h1 aria-label='About me'>
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={'About me'.split("")}
